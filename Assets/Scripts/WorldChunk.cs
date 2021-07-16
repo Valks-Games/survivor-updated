@@ -45,7 +45,7 @@ public class WorldChunk : MonoBehaviour
 
     public void Generate(int chunkX, int chunkZ)
     {
-        // Discrete Procedural Grid (2 vertices are never shared)
+        // Vertices are shared
         Vector3 renderOffset = new Vector3(chunkX * chunkSize * cellSize, 0, chunkZ * chunkSize * cellSize);
 
         vertices = new Vector3[chunkSize * chunkSize * 4];
